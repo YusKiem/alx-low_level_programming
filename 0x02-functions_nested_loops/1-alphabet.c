@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * print_alphabet - prints the alphabet in lower
+  * print_alphabet - prints the alphabet in uppercase
   *
   *Return: Always 0.
  */
@@ -14,7 +14,5 @@ void print_alphabet(void)
 		_putchar(m);
 		m++;
 	}
-	print_alphabet();
-
 	_putchar('/n');
 }
