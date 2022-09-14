@@ -4,10 +4,10 @@
   *
   *Return - it's a void function
  */
-void print_alphabet_x10 (void)
+void print_alphabet_x10(void)
 {
 	char c;
-	int i, n = 10 ;
+	int i, n = 10;
 
 	for (i = 0; i < n ; i++)
 	{
@@ -19,5 +19,4 @@ void print_alphabet_x10 (void)
 		}
 		_putchar('\n');
 	}
-	
 }
