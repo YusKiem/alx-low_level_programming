@@ -1,20 +1,17 @@
-#include <stdio>
 #include "main.h"
 
 /**
-  * print_line - prints a straight line
-  * @n: length of the line
-  */
+ * print_line - draws a straight line in the terminal
+ *@n: number of times to print the line
+ * Return: Always 0.
+ */
 
 void print_line(int n)
 {
-	int i;
-	if (n <= 0)
-		_putchar('\n');
-	else
+	while (n > 0)
 	{
-		for (i = 0; i < n; i++)
-			_putchar('_');
-		_putchar('\n');
+		_putchar('_');
+		n--;
 	}
+	_putchar('\n');
 }
