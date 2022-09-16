@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
   * isupper - checks if an alphabet is upper or lower case
