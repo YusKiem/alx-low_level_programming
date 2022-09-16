@@ -7,7 +7,7 @@
   * Return: returns 1 if upper and 0 if lower case
   */
 
-int isupper(int c)
+int _isupper(int c)
 {
 	if (c > '64' && c < '91')
 		return (1);
