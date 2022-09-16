@@ -7,9 +7,9 @@
   * Return: returns 1 if upper and 0 if lower case
   */
 
-int isupper(char c)
+int isupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c > '64' && c < '91')
 		return (1);
 	else
 		return (0);
