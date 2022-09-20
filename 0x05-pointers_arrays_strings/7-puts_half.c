@@ -22,5 +22,4 @@ void puts_half(char *str)
 		for (neg = (ct - 1) / 2; str[neg] != '\0'; neg++)
 			putchar(str[neg + 1]);
 	}
-	putchar('\n');
 }
