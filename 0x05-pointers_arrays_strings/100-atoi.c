@@ -1,40 +1,24 @@
-#include "main.h"
-
 /**
- * main - random password generator for 101-crackme
+ * _atoi - converts a string to an integer
  *
- * Return: always 0
- */
-int main(void)
-{
-	int i, j, k, s;
-	char c[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char p[58];
+ * @s: string input parameter
+ *
+ * Return: converted integer from string
+*/
 
-	srand(time(NULL));
-	while (s != 2772)
-	{
-		i = k = s = 0;
-		while ((2772 - 122) > s)
-		{
-			j = rand() % 62;
-			p[i] = c[j];
-			s += c[j];
-			i++;
-		}
-		while (c[k])
-		{
-			if (c[k] == (2772 - s))
-			{
-				p[i] = c[k];
-				s += c[k];
-				i++;
-				break;
-			}
-			k++;
-		}
-	}
-	p[i] = '\0';
-	printf("%s", p);
-	return (0);
+int _atoi(char *s)
+{
+	unsigned int num = 0;
+	int sign = 1;
+
+	do {
+		if (*s == '-')
+			sign *= -1;
+		else if (*s >= '0' && *s <= '9')
+			num = (num * 10) + (*s - '0');
+		else if (num > 0)
+			break;
+	} while (*s++);
+
+	return (num * sign);
 }
