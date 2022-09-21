@@ -5,7 +5,7 @@
   *
   * @dest: first string
   * @src: second string to be concatenated
-  * Result: returns a character string
+  * Return: returns a character string
   */
 
 char *_strcat(char *dest, char *src)
