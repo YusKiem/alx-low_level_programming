@@ -3,6 +3,7 @@
 /**
   * _strncpy - copies a string into another pointer
   *
+  * @n: number of bytes
   * @dest: first pointer
   * @src: second pointer
   * Return: string of characters copied
