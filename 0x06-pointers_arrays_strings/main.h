@@ -18,5 +18,6 @@ char *leet(char *targ);
 char *string_toupper(char *c);
 char *rot13(char *targ);
 char *rot13(char *str);
+void print_number(int n);
 
 #endif
