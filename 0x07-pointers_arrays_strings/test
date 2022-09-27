@@ -1,0 +1,30 @@
+#include "main.h"
+
+/**
+  * _strspn - gets the length of a prefix substring
+  * @s: number of bytes to be returned
+  * @accept: char w/c contains only the bytes accepted
+  *
+  * Return: returns an unsigned integer which is the length of the b in acc
+  */
+
+unsigned int _strspn(char *s, char *accept)
+{
+	int x = 0, y = 0;
+	unsigned int c = 0;
+
+	while (*(s + x) != '\0')
+	{
+		if (*(s + x) != 32)
+			while (*(accept + y) != '\0')
+			{
+				if (*(s + x) == *(accept + y))
+					c++;
+				y++;
+			}
+		else
+			return (c);
+		x++;
+	}
+	return (c);
+}
