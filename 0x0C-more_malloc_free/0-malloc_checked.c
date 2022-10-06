@@ -3,7 +3,7 @@
 /**
   * malloc_checked - returns pointer to allocated memory
   * @b: size of allocated memory
-  * Return: 
+  * Return: returns pointer to address of allocated memory
   */
 
 void *malloc_checked(unsigned int b)
