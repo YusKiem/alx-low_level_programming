@@ -1,4 +1,5 @@
-#include "function_pointers"
+#include "3-calc.h"
+#include <stddef.h>
 
 /**
  * get_op_func - get ops function pointer of type char array
@@ -22,7 +23,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
-	for (i = 0, i < 5, ++i)
+	for (i = 0; i < 5; ++i)
 		if (*s == *ops[i].op)
 			return (ops[i].f);
 
